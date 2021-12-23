@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Nav from './component/Nav';
+import UseContext from './component/useContext/UseContext';
 import UseEffect from './component/UseEffect';
+import UseImperative from './component/UseImperative';
 import UseLayoutEffect from './component/UseLayoutEffect';
+import UseMemo from './component/UseMemo';
 import UseReducer from './component/UseReducer';
 import UseRef from './component/UseRef';
 import UseState from './component/UseState';
@@ -21,6 +24,9 @@ function App() {
             <Route path='/usereducer' element={<UseReducer />}></Route>
             <Route path='/useref' element={<UseRef />}></Route>
             <Route path='/uselayouteffect' element={<UseLayoutEffect />}></Route>
+            <Route path='/useimperative' element={<UseImperative />}></Route>
+            <Route path='/usecontext' element={<UseContext />}></Route>
+            <Route path='/usememo' element={<UseMemo />}></Route>
           </Routes>
       </Router>
     </div>

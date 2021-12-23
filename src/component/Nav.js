@@ -10,6 +10,10 @@ const Nav = () => {
                 <Link to='/useeffect'><li>useEffect</li></Link>
                 <Link to='/useref'><li>useRef</li></Link>
                 <Link to='/uselayouteffect'><li>useLayoutEffect</li></Link>
+                <Link to='/useimperative'><li>useImperative</li></Link>
+                <Link to='/usecontext'><li>useContext</li></Link>
+                <Link to='/usememo'><li>useMemo</li></Link>
+                
             </ul>
         </nav>
     )

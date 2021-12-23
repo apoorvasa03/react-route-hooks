@@ -11,10 +11,10 @@ nav{
 }
 
 .nav-list{
-  display: flex;
+  /* display: flex;
   flex-direction: row; 
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   cursor: pointer;
   width: 40%;
 }
