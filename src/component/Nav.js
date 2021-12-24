@@ -13,6 +13,7 @@ const Nav = () => {
                 <Link to='/useimperative'><li>useImperative</li></Link>
                 <Link to='/usecontext'><li>useContext</li></Link>
                 <Link to='/usememo'><li>useMemo</li></Link>
+                <Link to='/usecallback'><li>useCallback</li></Link>
                 
             </ul>
         </nav>

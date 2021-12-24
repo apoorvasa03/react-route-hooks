@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 const UseMemo = () => {
     const [data, setData] = useState(null);
@@ -13,6 +13,8 @@ const UseMemo = () => {
           setData(response.data);
         });
     }, []);
+
+   
 
     const findLongestName = (comments) => {
         if (!comments) return null;
@@ -28,15 +30,15 @@ const UseMemo = () => {
      return longestName
     }
 
+    let getLongestName = useMemo(() => findLongestName(data), [data])
+
     return (
         <div>
-            <h3> {findLongestName(data)} </h3>
+            <h3> {getLongestName} </h3>
             <button onClick={() => { setToggle(!toggle); }}>Toggle </button>
             {toggle && <h1> toggle </h1>}
         </div>
     )
 }
-
-console.log(UseMemo)
 
 export default UseMemo

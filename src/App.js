@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Nav from './component/Nav';
+import UseCallback from './component/useCallback/UseCallback';
 import UseContext from './component/useContext/UseContext';
 import UseEffect from './component/UseEffect';
 import UseImperative from './component/UseImperative';
@@ -27,6 +28,7 @@ function App() {
             <Route path='/useimperative' element={<UseImperative />}></Route>
             <Route path='/usecontext' element={<UseContext />}></Route>
             <Route path='/usememo' element={<UseMemo />}></Route>
+            <Route path='/usecallback' element={<UseCallback />}></Route>
           </Routes>
       </Router>
     </div>
